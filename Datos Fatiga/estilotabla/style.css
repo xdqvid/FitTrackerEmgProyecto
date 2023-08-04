@@ -1,0 +1,215 @@
+      /* Estilos para el header */
+        .header {
+            background-color: #3498db;
+            padding: 10px 0;
+        }
+
+        /* Estilos para la barra de navegación */
+        .navbar {
+            background-color: #3498db;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar-brand img {
+            width: 100px; /* Ajustar el tamaño del logo según tus necesidades */
+        }
+
+        /* Estilos para el menú desplegable */
+        .navbar-collapse {
+            display: none;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-link:hover {
+            color: #f1c40f;
+        }
+
+        /* Estilos para el botón del menú desplegable */
+        .navbar-show-btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+
+        .navbar-hide-btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Estilos para la barra de búsqueda */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar-box {
+            background-color: #fff;
+            display: flex;
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        .search-icon img {
+            width: 20px;
+            margin-right: 5px;
+        }
+
+        .search-control {
+            border: none;
+            outline: none;
+        }
+
+        /* Estilos para medios pequeños */
+        @media screen and (max-width: 768px) {
+            .navbar-show-btn {
+                display: block;
+            }
+
+            .navbar-nav {
+                display: none;
+            }
+
+            .navbar-collapse {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .navbar-hide-btn {
+                display: block;
+            }
+        }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner-left {
+    flex-basis: 60%;
+    margin-right: 20px;
+}
+
+.banner-right {
+    flex-basis: 35%;
+}
+/* ... (código CSS anterior) ... */
+
+.table-container, .chart-container {
+    margin-bottom: 20px;
+}
+
+/* ... (código CSS anterior) ... */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#emg-data-chart {
+    width: 100%;
+}
+
+#average, #average2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#fatigue-message {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+}
+
+.btn-light-blue {
+    background-color: #d3eff8;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+.btn-group .btn {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-left, .banner-right {
+        flex-basis: auto;
+    }
+}
